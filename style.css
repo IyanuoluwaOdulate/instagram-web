@@ -7,22 +7,15 @@
 body{
     background-color: rgb(247, 247, 247);
 }
-
-nav > div > a{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
 .container{
     display: flex;
 }
-
+/**NAV AREA**/
 nav{
-    /**padding: 10px;**/
+    position: fixed;
     padding-left: 25px;
     border-right: 1px solid #b7b7b7;
-    width: 25%;
+    width: 19%;
     height: 100vh;
     background-color: #fff;
 }
@@ -30,10 +23,12 @@ nav{
 .flexdirection > a{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.2rem;
     color: black;
     text-decoration: none;
     margin-bottom: 40px;
+    font-size: 18px;
 }
 
 .flexdirection > a:hover{
@@ -43,35 +38,62 @@ nav{
     margin-right: 32px;
 }
 
+.icons{
+    font-size: 20px;
+}
+
 .logo{
     height: 29px;
     width: 103px;
     margin: 30px 0px;
 }
+.profile p{
+    margin-left: 5px;
+}
 
-.middle{
-    width: 100%;
-    height: 100%;
+.profile_img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.more{
+    margin-top: 100px;
+    margin-right: 5px;
+}
+
+
+
+/**MIDDLE PART**/
+
+/**STORIES PART**/
+.middle_stories{
+    width: 40%;
     background-color: rgb(247, 247, 247);
+    margin-left: 24rem;
+    margin-top: 2rem;
 }
 
 .middlesection{
     background-color: #fff;
     border: solid 1px #ccc;
     border-radius: 5px;
-    width: 60%;
-    height: 20%;
+    width: 100%;
+    height: 4%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: black;
-    margin-left: 100px;
-    margin-top: 20px;
+   /**margin-left: 100px;
+    margin-top: 20px;**/
+}
+.userstories{
+    margin: 15px 0;
 }
 
 .user-img img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
     display: flex;
@@ -80,10 +102,10 @@ nav{
 }
 
 .user-img{
-    background-image: url('../images/instagram-story.png' );
+    background-image: url('../image/instagram-story.png' );
     background-size: cover;
     background-position: center;
-    padding: 6px;
+    padding: 7px;
 }
 
 .user-info .username{
@@ -91,85 +113,105 @@ nav{
      margin-left: 0.6rem;
 }
 
+/**POSTS PART**/
 .content{
-    background-color: #fff;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    width: 60%;
-    height: 100vh;
-    margin-left: 100px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 100%;
 }
 
-.post-1{
+.post-2{
+    margin-top: 20px;
     border: solid 1px #ccc;
     background-color: #fff;
+    border-radius: 2%;
 }
 
 .head{
     display: flex;
     align-items: center;
-    padding: 5px;
+}
+.prof-pic img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.head img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: 10px;
+.prof-pic{
+    background-image: url('../image/instagram-story.png' );
+    background-size: cover;
+    background-position: center;
+    padding: 6px;
+    margin: 8px;
 }
 
 p.name{
-    margin-left: 10px;
     font-weight: bold;
-}
-p.elipsies{
-    margin-left: 21rem;
-    font-size: 20px;
-    font-weight: bolder;
+    font-family: var(--font-family-system);
 }
 
-hr{
-    border-top: solid 0.5px #ccc ;
+.options{
+    margin-left: 25rem;
+    width: 15px;
+}
+
+.options-1{
+    margin-left: 22rem;
+    width: 15px;
 }
 
 .picture img{
-    width: 550px;
-    height: 550px;
-    /*image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: optimizeQuality;*/
+    width: 100%;
 }
+
 
 .icons{
-    padding-top: 15px;
-    padding-bottom: 8px;
-    font-size: 20px;
+    margin-left: 2px;
 }
 
-.icons a{
-    color: black;
-    padding: 10px;
+.icons :nth-of-type(1){
+    width: 27px;
 }
 
-.icons a:nth-of-type(4){
-    padding: 0;
-    margin-left: 24rem;
+.icons :nth-of-type(2){
+    width: 20px;
+    margin-bottom: 2px;
 }
 
-/*likes&comments*/
+.icons :nth-of-type(3){
+    width: 27px;
+}
+
+.icons :nth-of-type(4){
+    width: 22px;
+    margin-left: 23rem;
+}
+
+.icons img{
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
 .likes-img-txt{
     display: flex;
     align-items: center;
 }
 
-.image-like{
-     width: 25px;
-     height: 25px;
-     border-radius: 50%;
-     margin: 10px;
+.likes{
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.likes img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    margin-left: -8px
 }
 
 .like-text{
@@ -177,18 +219,39 @@ hr{
     font-size: 14px;
 }
 
-.comments{
+.caption{
+    padding: 4px;
+}
+
+.caption .u_name{
+    font-weight: bold;
+    margin-left: 9px;
+    padding-right: 4px;
+}
+
+.caption-1{
+    margin-top: -5px;
+}
+.caption-1 .u_name{
+    margin-left: 17px;
+}
+
+.caption-1 img{
+    width: 20px;
+}
+
+.v-comment{
     color: rgb(117, 115, 115);
     font-size: 14px;
-    margin-left: 0.7rem;
+    margin-left: 0.5rem;
+    padding: 5px;
 }
 
 .like-date{
     color: rgb(117, 115, 115);
-    margin-left: 0.7rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 12px;
+    padding: 10px;
+    margin-left: 0.3rem;
+    font-size: 10px;
 }
 
 .comm-end{
@@ -197,97 +260,145 @@ hr{
     padding: 10px;
 }
 
-.comm-end a{
-    font-size: 20px;
-    color: black;
+.u-comment{
+    color: rgb(117, 115, 115);
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 .post{
-    color: blue;
+    color: rgb(144, 169, 238);
     margin-left: 22rem;
 }
-.scnd-post{
-    margin-top: 15rem;
-}
-.post-2{
-    border: solid 4px black;
-    background-color: #fff;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    width: 60%;
-    margin-left: 100px;
-    margin-top: 20px;
+/**SUGGESTIONS**/
+.suggestions{
+    width: 30%;
+    margin-left: 25px;
+    margin-top: 4rem;
 }
 
-.giwa-story{
-    background-image: url('../images/instagram-story.png' );
-    background-size: cover;
-    background-position: center;
-    padding: 6px;
-}
-.post-3{
-    border: solid 4px black;
-    background-color: #fff;
-    border: solid 1px #ccc;
-    border-radius: 5px;
-    width: 60%;
-    margin-left: 100px;
-    margin-top: 20px;
-}
 
-.caption{
-    padding: 10px;
-    text-align: left;
-    margin-top: -10px;
-}
-
-.uname{
-    padding-right: 4px;
-}
-.stories{
-    width: 20%;
-    height: 100vh;
-    padding: 1rem 1rem 0 0;
-    background-color: rgb(247, 247, 247);
-}
-
-.myusercard{
+.myprofile{
     display: flex;
     align-items: center;
-    margin-top: 1rem;
-}
-
-.my-img img{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-img{
-  padding: 5px;
-  background-image: url('../images/instagram-story.png');
-  background-size: cover;
-  background-position: center;
 }
 
 .my-info{
     margin-left: 0.8rem;
+}
+
+.myusername{
+    font-weight: bold;
+}
+
+.myuserhandle{
+    color: rgb(117, 115, 115);
+    font-size: 0.8rem;
+}
+
+.follow-btn{
+    color: rgb(0, 119, 255);
+    margin-left: 8.5rem;
+    border: none;
+    font-size: 0.7rem;
+}
+
+.sgtn{
+    display: flex;
+    margin: 9px 4px;
+}
+.sgtn p{
+    color: rgb(117, 115, 115);
+    font-size: 1rem;
+}
+
+.sgtn .btn{
+    margin-left: 9.5rem;
+    border: none;
+    font-weight: bold;
+}
+
+.profiles{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.sgtd-img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.sgtd-info{
+    margin-left: 0.8rem;
+}
+
+.u-name{
+   font-weight: 540;
+   font-size: 1rem;
+}
+
+.u-handle{
+    color: rgb(117, 115, 115);
+    font-size: 0.8rem;
+}
+
+.follow-btn-1{
+    color: rgb(0, 119, 255);
+    margin-left: 9.5rem;
+    border: none;
+    font-size: 0.7rem;
     
 }
 
-.my-info .myusername{
-    font-size: 1rem;
-    font-weight: 800;
+.follow-btn-2{
+    color: rgb(0, 119, 255);
+    margin-left: 5.5rem;
+    border: none;
+    font-size: 0.7rem;
+    
 }
 
-.my-info .myuserhandle{
-    font-size: 0.8rem;
-    color: #545454;
+.follow-btn-3{
+    color: rgb(0, 119, 255);
+    margin-left: 2.8rem;
+    border: none;
+    font-size: 0.7rem;
+    
 }
 
+.follow-btn-4{
+    color: rgb(0, 119, 255);
+    margin-left: 8.5rem;
+    border: none;
+    font-size: 0.7rem;
+    
+}
 
+/**FOOTER**/
+.footer{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 350px;
+}
 
+.footer a{
+    text-decoration: none;
+    color: rgb(117, 115, 115);
+}
+
+.footer span, .copyright span{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 1px;
+}
+.fa-circle{
+    font-size: 2px;
+    vertical-align: middle;
+    margin-left: 1px;
+}
+
+.copyright{
+    color: rgb(117, 115, 115);
+}
